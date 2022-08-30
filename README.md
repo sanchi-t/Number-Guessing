@@ -23,3 +23,6 @@ It maintains the highscore and current score for the user to keep track of his/h
 ![brave_cVnHfXkSbT](https://user-images.githubusercontent.com/98596642/187372741-657ef502-e282-40a7-ad01-b72262dfb9cf.png)
 
 ![brave_QqksGeWide](https://user-images.githubusercontent.com/98596642/187373199-6e64d524-c93f-491d-a3af-a6e463ea8e62.png)
+
+![brave_TgHb6ZKXxI](https://user-images.githubusercontent.com/98596642/187388459-af0f055f-ad10-409b-8453-9a8923279388.png)
+
