@@ -1,13 +1,19 @@
 'use strict';
+
+//initializing score, highscore and the random hidden number
 let answer = Math.trunc(Math.random()*20)+1;
 let score = 20;
 let highScore = 0;
 console.log(answer);
+
+//the function activates when user click on "check" button
 document.querySelector('button.btn.check').addEventListener('click',function(){
     const userInput = Number(document.querySelector('.guess').value);
     console.log(typeof userInput);
 
 
+    
+    //incase of too many wrong guesses the score gets below zero. the user will lose the game
     if(score<=0){
         document.querySelector('p.message').textContent="You Lost :(";
         
@@ -65,6 +71,7 @@ document.querySelector('button.btn.check').addEventListener('click',function(){
 document.querySelector('.again').addEventListener('click',function(){
     document.querySelector('p.message').textContent="Start guessing...";
     score=20;
+    answer = Math.trunc(Math.random()*20)+1;
     document.querySelector('.score').textContent=score;
     document.querySelector('div.number').textContent="?";
     document.querySelector('div.number').style.width="15rem";
