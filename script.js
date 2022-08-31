@@ -30,11 +30,12 @@ document.querySelector('button.btn.check').addEventListener('click',function(){
     }
 
 
-    //
     if((!userInput || typeof userInput !== "number") && userInput!="0"){
         document.querySelector('p.message').textContent="🛑 ENTER A VALID INPUT";
     }
 
+
+    //if user guesses the correct number
     else if(answer===userInput){
         console.log("right answer");
         document.querySelector('p.message').textContent="🎉CORRECT NUMBER!!🎉";
@@ -49,6 +50,8 @@ document.querySelector('button.btn.check').addEventListener('click',function(){
 
     }
 
+
+    //if users guess is lower than the hidden number
     else if(answer>userInput){
         if(answer-userInput>5){
             document.querySelector('p.message').textContent=low_message;
@@ -62,6 +65,8 @@ document.querySelector('button.btn.check').addEventListener('click',function(){
         }
     }
 
+
+    //if users guess is higher than the hidden number
     else if(answer<userInput){
         if(userInput-answer>5){
             document.querySelector('p.message').textContent=high_message;
@@ -80,6 +85,9 @@ document.querySelector('button.btn.check').addEventListener('click',function(){
 
 });
 
+
+
+//resets the game when the user clicks on "again"
 document.querySelector('.again').addEventListener('click',function(){
     document.querySelector('p.message').textContent="Start guessing...";
     score=20;
