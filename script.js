@@ -10,6 +10,8 @@ let high_message="Too High!";
 let high_message2="A little High!";
 console.log(answer);
 
+//sanchit
+
 //the function activates when user click on "check" button
 document.querySelector('button.btn.check').addEventListener('click',function(){
     const userInput = Number(document.querySelector('.guess').value);
