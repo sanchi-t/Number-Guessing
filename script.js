@@ -10,7 +10,6 @@ let high_message="Too High!";
 let high_message2="A little High!";
 console.log(answer);
 
-//sanchit
 
 //the function activates when user click on "check" button
 document.querySelector('button.btn.check').addEventListener('click',function(){
@@ -30,6 +29,8 @@ document.querySelector('button.btn.check').addEventListener('click',function(){
         
     }
 
+
+    //
     if((!userInput || typeof userInput !== "number") && userInput!="0"){
         document.querySelector('p.message').textContent="🛑 ENTER A VALID INPUT";
     }
